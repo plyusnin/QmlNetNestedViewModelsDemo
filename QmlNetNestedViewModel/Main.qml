@@ -21,7 +21,8 @@ ApplicationWindow {
             text: viewModel.mainText
         }
         Text {
-            text: viewModel.child.text
+            property var child: viewModel.child
+            text: child.text
         }
     }
 }
